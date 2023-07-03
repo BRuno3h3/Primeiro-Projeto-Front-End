@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+:root {
+   --cor-fundo: #0E2954;
+   --cor-secundaria: #1F6E8C;
+   --cor-terciaria: #2E8A99;
+   --cor-quartenaria: #84A7A1;
+}
+
+body {
+   box-sizing: border-box;
+   background-color: var(--cor-fundo);
+   color: var(--cor-secundaria);
+   display: flex;
+   flex-direction: column;
+   background-attachment: fixed;
+   min-height: 100vh;
+   gap: 30px;
+}
+
+.titulo-destaque {
+   color: var(--cor-terciaria)
+}
+
+.apresentacao {
+   margin: 10%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.img-principal {
+   margin-left: 5vh;
+   height: 550px;
+   width: 488px;
+   border-right-style: solid;
+   border-top-style: solid;
+   border-width: 10px;
+   border-color: var(--cor-terciaria);
+   border-radius: 10%;
+}
+
+.apresentacao__conteudo {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 45px;
+}
+
+.apresntacao__conteudo__titulo {
+   font-family: 'Krona One', sans-serif;
+   font-size: 36px;
+   flex-direction: column;
+}
+
+.apresentacao__conteudo__texto {
+   font-size: 24px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.links-contato {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   gap: 32px;
+   font-family: 'Krona One', sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+}
+
+.botao-contato {
+   text-decoration: none;
+   width: 378px;
+   text-align: center;
+   font-size: 24px;
+   padding: 21.5px 0;
+   border-radius: 10px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   color: var(--cor-secundaria);
+   border-style: solid;
+   border-width: 2px;
+   border-color: var(--cor-terciaria);
+   background-color: var(--cor-quartenaria);
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+}
+
+.botao-contato__imagem {
+   width: 32px;
+   height: 32px;
+}
+
+.botao-contato:hover {
+   background-color: var(--cor-terciaria);
+}
+
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+   width: 100%;
+   height: 90px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   padding: 5px;
+   margin-top: auto;
+}
+
+header {
+   padding: 2% 0 0 10%;
+}
+
+.header-nav {
+   display: flex;
+   gap: 80px;
+}
+
+.header-link {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   font-size: 24px;
+   color: var(--cor-terciaria);
+   text-decoration: none;
+}
+
+.header-link:hover {
+   text-decoration: underline;
+}
+
+.header-link:active {
+   color: var(--cor-secundaria);
+}
